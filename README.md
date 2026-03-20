@@ -1,31 +1,25 @@
-# spectrum
+# Spectrum Software Solutions — ERP for Local Government
 
-Minimal Node.js starter for the Spectrum project.
+A modern marketing website for Spectrum ERP, a comprehensive financial management platform built for municipalities, counties, and utility districts.
 
-## Requirements
+## Tech Stack
 
-- Node.js 20+
-- npm 10+
+- **Next.js** (App Router)
+- **TypeScript**
+- **Tailwind CSS v4**
 
 ## Getting Started
 
 ```bash
 npm install
+npm run dev
 ```
 
-## Scripts
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-- `npm run start`: Run the app.
-- `npm run dev`: Run the app in development mode.
-- `npm run test`: Placeholder test command.
+## Build
 
-## Project Structure
-
-```text
-.
-|- README.md
-|- package.json
-|- package-lock.json
-`- src/
-	`- index.js
+```bash
+npm run build
+npm start
 ```

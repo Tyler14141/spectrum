@@ -1,15 +1,25 @@
 {
-  "name": "spectrum",
-  "version": "0.1.0",
+  "name": "spectrum-erp-website",
+  "version": "1.0.0",
   "private": true,
-  "description": "Spectrum project starter",
-  "main": "src/index.js",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "node src/index.js",
-    "test": "echo \"No tests configured\" && exit 0"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "keywords": [],
-  "author": "",
-  "license": "UNLICENSED"
+  "dependencies": {
+    "lucide-react": "^0.577.0",
+    "next": "^16.2.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.2.2",
+    "@types/node": "^25.5.0",
+    "@types/react": "^19.2.14",
+    "postcss": "^8.5.8",
+    "tailwindcss": "^4.2.2",
+    "typescript": "^5.9.3"
+  }
 }

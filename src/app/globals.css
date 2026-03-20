@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --color-spectrum-green: #1a7a4b;
+  --color-spectrum-green-dark: #145f3a;
+  --color-spectrum-green-light: #e8f5ee;
+  --color-spectrum-teal: #0d6e6e;
+  --color-spectrum-navy: #1a2332;
+  --color-spectrum-navy-light: #2a3a4e;
+  --color-spectrum-gray: #4a5568;
+  --color-spectrum-gray-light: #f7fafc;
+  --color-spectrum-white: #ffffff;
+  --color-spectrum-accent: #2ecc71;
+
+  --font-sans: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}

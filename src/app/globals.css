@@ -4,17 +4,92 @@
   --color-spectrum-green: #1a7a4b;
   --color-spectrum-green-dark: #145f3a;
   --color-spectrum-green-light: #e8f5ee;
-  --color-spectrum-teal: #0d6e6e;
+  --color-spectrum-secondary: #22a366;
+  --color-spectrum-accent: #E8913A;
+  --color-spectrum-dark: #0e3d26;
   --color-spectrum-navy: #1a2332;
-  --color-spectrum-navy-light: #2a3a4e;
   --color-spectrum-gray: #4a5568;
   --color-spectrum-gray-light: #f7fafc;
-  --color-spectrum-white: #ffffff;
-  --color-spectrum-accent: #2ecc71;
 
   --font-sans: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
 }
 
+body {
+  color: #1a1a2e;
+  background: #ffffff;
+  font-feature-settings: "kern" 1, "liga" 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+/* Hero gradient animation */
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #0e3d26 0%, #1a7a4b 40%, #22a366 100%);
+  background-size: 200% 200%;
+  animation: gradientShift 12s ease infinite;
+}
+
+/* Section fade-in */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.6s ease-out forwards;
+}
+
+/* Module card hover effect */
+.module-card {
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.module-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(26, 122, 75, 0.15);
+}
+
+/* Testimonial card */
+.testimonial-card {
+  position: relative;
+}
+
+.testimonial-card::before {
+  content: '\201C';
+  position: absolute;
+  top: -8px;
+  left: 20px;
+  font-size: 72px;
+  color: rgba(26, 122, 75, 0.15);
+  font-family: Georgia, serif;
+  line-height: 1;
+}
+
+/* Stats counter */
+.stat-number {
+  background: linear-gradient(135deg, #1a7a4b, #22a366);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
 }
